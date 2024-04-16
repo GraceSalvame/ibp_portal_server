@@ -1,0 +1,6 @@
+@ibp_portal_server_HostAddress = http://localhost:5027
+
+GET {{ibp_portal_server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
