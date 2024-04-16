@@ -28,8 +28,4 @@ Language: C#
 Framework: .NET Entity Framework Core - v8.0.1
 Database: Microsoft SQL
 
-## Tools<a name="tool"></a>
-Microsoft Visual Studio Community 2022 (64-bit) - v17.9.3
-SQL Server Management Studio (Local Development) - v19.3.4.0
-
 <br>
