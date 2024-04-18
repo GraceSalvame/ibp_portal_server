@@ -15,9 +15,6 @@ namespace ibp_portal_server.Model
         [Column(TypeName = "varchar(50)")]
         public string user_id { get; set; }
 
-        [ForeignKey("user_id")]
-        public User User { get; set; }
-
         [Required]
         [Column(TypeName = "varchar(50)")]
         public string firstname { get; set; }
@@ -88,29 +85,28 @@ namespace ibp_portal_server.Model
         [Column(TypeName = "image")]
         public byte[] attachment_gcash_id { get; set; }
 
+        [ForeignKey("Ibp_type")]
         public int ibp_type_id { get; set; }
-        [ForeignKey("ibp_type_id")]
         public Ibp_type Ibp_type { get; set; }
 
+        [ForeignKey("Branch")]
         public int branch_id { get; set; }
-        [ForeignKey("branch_id")]
         public Branch Branch { get; set; }
 
+        [ForeignKey("Government_id")]
         public int? government_id { get; set; }
-        [ForeignKey("government_id")]
-        public Government_Id Government_Id { get; set; }
+        public Government_id Government_id { get; set; }
 
+        [ForeignKey("Recruitment_channel")]
         public int? recruitment_channel_id { get; set; }
-        [ForeignKey("recruitment_channel_id")]
         public Recruitment_channel Recruitment_channel { get; set; }
 
+        [ForeignKey("Employment_sector")]
         public int? employment_sector_id { get; set; }
-        [ForeignKey("employment_sector_id")]
         public Employment_sector Employment_sector { get; set; }
 
-        [DefaultValue(0)]
+        [ForeignKey("Status")]
         public int? status_id { get; set; }
-        [ForeignKey("status_id")]
         public Status Status { get; set; }
 
         public DateTime? date_created { get; set; }
