@@ -32,3 +32,4 @@ Database: Microsoft SQL
 Microsoft Visual Studio Community 2022 (64-bit) - v17.9.3 <br>
 SQL Server Management Studio (Local Development) - v19.3.4.0
 
+# ibp_portal_server

@@ -10,10 +10,14 @@ namespace ibp_portal_server.Model
         public int id { get; set; }
 
         [Required]
-        [Column(TypeName = "varchar(100)")]
+        [Column(TypeName = "nvarchar(100)")]
         public string name { get; set; }
 
-        [Column(TypeName = "text")]
+        [Column(TypeName = "ntext")]
         public string description { get; set; }
+
+        //Navigation Property
+        public ICollection<Ibp> Ibps { get; set; }
+        public ICollection<Ibp_information_update> Ibp_information_updates { get; set; }
     }
 }

@@ -1,6 +1,9 @@
-﻿namespace ibp_portal_server.Helper.Interface
+﻿using ibp_portal_server.Model;
+
+namespace ibp_portal_server.Helper.Interface
 {
-    public class IIbpsHelper
+    public interface IIbpsHelper
     {
+        
     }
 }

@@ -9,18 +9,16 @@ namespace ibp_portal_server.Model
             [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
             public int id { get; set; }
 
-            [ForeignKey("Ibp")]
-            public int ibp_id { get; set; }
-            public Ibp Ibp { get; set; }
+            public int ibp_id { get; set; } //Foreign key property
+            public Ibp Ibp { get; set; } //Navigation property
 
-            [ForeignKey("User")]
-            public int user_id { get; set; }
-            public User User { get; set; }
+            public int user_id { get; set; } //Foreign key property
+            public User User { get; set; } //Navigation property
 
-            [ForeignKey("Role")]
-            public int role_id { get; set; }
-            public Role Role { get; set; }
+            public int role_id { get; set; } //Foreign key property
+            public Role Role { get; set; } //Navigation property
 
+            [Required]
             public DateTime confirmed_date { get; set; }
         }
     }
