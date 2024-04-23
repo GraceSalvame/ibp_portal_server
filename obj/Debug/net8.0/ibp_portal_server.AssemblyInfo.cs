@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ibp_portal_server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9eb621e6f2ff82f1d78975cb4cd1cb718ce7a33")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4fd3cd93b03fea1eb2f10a48a011295bfb079bed")]
 [assembly: System.Reflection.AssemblyProductAttribute("ibp_portal_server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ibp_portal_server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
