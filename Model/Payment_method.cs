@@ -6,25 +6,22 @@ namespace ibp_portal_server.Model
     public class Payment_method
     {
         [Key]
-        DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
 
-        [ForeignKey("Ibp")]
-        public int ibp_id { get; set; }
-        public Ibp Ibp { get; set; }
+        public int ibp_id { get; set; } //Foreign key property
+        public Ibp Ibp { get; set; } //Navigation property
 
-        [ForeignKey("Payment_channel")]
-        public int Payment_channel_id { get; set; }
-        public Payment_channel Payment_channel { get; set; }
+        public int payment_channel_id { get; set; }  //Foreign key property
+        public Payment_channel Payment_channel { get; set; } //Navigation property
 
-        [Column(TypeName = "varchar(30)")]
+        [Column(TypeName = "nvarchar(30)")]
         public string card_no { get; set; }
 
-        [Column(TypeName = "varchar(20)")]
+        [Column(TypeName = "nvarchar(20)")]
         public string account_no { get; set; }
 
-        [ForeignKey("Status")]
-        public int status_id { get; set; }
-        public Status Status { get; set; }
+        public int status_id { get; set; }  //Foreign key property
+        public Status Status { get; set; } //Navigation property
     }
 }

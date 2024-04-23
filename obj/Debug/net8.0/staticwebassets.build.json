@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qjsJka78oLToPRfRvHv1pd+DfCC2FbQe9ai2lMnZcKU=",
+  "Source": "ibp_portal_server",
+  "BasePath": "_content/ibp_portal_server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

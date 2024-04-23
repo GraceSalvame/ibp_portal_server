@@ -15,22 +15,24 @@ namespace ibp_portal_server.Model
         public int? user_id { get; set; }
 
         [Required]
-        [Column(TypeName = "varchar(50)")]
+        [Column(TypeName = "nvarchar(50)")]
         public string email { get; set; }
 
-        [ForeignKey("Role")]
-        public int role_id { get; set; }
-        public Role Role { get; set; }
+        public int role_id { get; set; } //Foreign key property
+        public Role Role { get; set; } //Navigation property
 
-        [ForeignKey("branch_id")]
-        public int? branch_id { get; set; }
-        public Branch Branch { get; set; }
+        public int branch_id { get; set; } //Foreign key property
+        public Branch Branch { get; set; } //Navigation property
 
-        [ForeignKey("Status")]
-        public int status_id { get; set; }
-        public Status Status { get; set; }
+        public int status_id { get; set; } //Foreign key property
+        public Status Status { get; set; } //Navigation property
 
         [Required]
         public DateTime date_created { get; set; }
+
+        //Navigation property
+        public ICollection<Ibp_registration> Ibp_registrations { get; set; }
+        public ICollection<Payment_transaction> Payment_transactions { get; set; }
+        public ICollection<Request_transaction> Request_transactions { get; set; }
     }
 }

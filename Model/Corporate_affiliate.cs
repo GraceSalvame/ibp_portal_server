@@ -9,24 +9,23 @@ namespace ibp_portal_server.Model
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
 
-        [ForeignKey("Ibp")]
-        public int ibp_id { get; set; }
-        public Ibp Ibp { get; set; }
+        public int ibp_id { get; set; } //Foreign key property
+        public Ibp Ibp { get; set; } //Navigation Property
 
         [Required]
-        [Column(TypeName = "varchar(100)")]
+        [Column(TypeName = "nvarchar(100)")]
         public string name { get; set; }
 
         [Required]
-        [Column(TypeName = "varchar(50)")]
+        [Column(TypeName = "nvarchar(50)")]
         public string relationship { get; set; }
 
         [Required]
-        [Column(TypeName = "varchar(50)")]
+        [Column(TypeName = "nvarchar(50)")]
         public string position { get; set; }
 
         [Required]
-        [Column(TypeName = "varchar(100)")]
+        [Column(TypeName = "nvarchar(50)")]
         public string rank { get; set; }
     }
 }
